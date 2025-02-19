@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+  background-color: rgb(11, 36, 28);
+}
+
 .container {
   margin: 0 auto;
-  width: 600px;
+  width: 500px;
   background-color: pink;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 ul {
@@ -18,8 +25,11 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  align-content: center;
   background-color: rgb(59, 97, 59);
   text-align: center;
+  margin-top: 30px;
+  height: 70px;
 }
 
 .income {
@@ -34,10 +44,35 @@ ul {
 
 .history-container {
   background-color: lightblue;
+  padding: 30px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   background-color: lightsalmon;
+  padding: 30px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 440px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(139, 89, 89);
+}
+
+input {
+  height: 40px;
+  padding-left: 20px;
+}
+
+.input-text::placeholder {
+  font-size: 18px;
+}
+
+.input-number::placeholder {
+  font-size: 18px;
 }

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 600px;
+  background-color: pink;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.income-expense {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  background-color: rgb(59, 97, 59);
+  text-align: center;
+}
+
+.income {
+  width: 100%;
+  justify-self: center;
+  border-right: 2px solid black;
+}
+
+.expense {
+  justify-self: center;
+}
+
+.history-container {
+  background-color: lightblue;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: lightsalmon;
+}

@@ -4,11 +4,41 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Expense Tracker</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="balance">Balance <span class="balance-num"></span></h1>
+      <h2>Expense Tracker</h2>
+      <h1 class="balance">Balance <span class="balance-num">$ 0</span></h1>
+
+      <div class="income-expense">
+        <div class="income">
+          INCOME
+          <p class="income-num">0</p>
+        </div>
+        <div class="expense">
+          EXPENSE
+          <p class="expense-num">0</p>
+        </div>
+      </div>
+
+      <div class="history-container">
+        <p>History</p>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+
+      <form class="form">
+        <label>Text</label>
+        <input type="text" class="input-text" />
+
+        <label>Amount</label>
+        <label>(negative - expense, positive - income)</label>
+        <input type="number" class="input-text" />
+      </form>
+
+      <button class="submit-btn">Add Transaction</button>
     </div>
 
     <script type="module" src="/src/main.js"></script>

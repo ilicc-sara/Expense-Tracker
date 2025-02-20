@@ -47,6 +47,24 @@ ul {
   padding: 30px;
 }
 
+.items-container {
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item {
+  background-color: blue;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-right-style: solid;
+  border-right-color: red;
+  border-right-width: 7px;
+  /* border-right: 7px solid red; */
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -67,6 +85,7 @@ ul {
 input {
   height: 40px;
   padding-left: 20px;
+  font-size: 18px;
 }
 
 .input-text::placeholder {

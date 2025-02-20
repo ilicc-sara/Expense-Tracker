@@ -6,15 +6,20 @@
 
 html {
   font-family: sans-serif;
-  background-color: rgb(11, 36, 28);
+  background-color: rgb(255, 255, 255);
 }
 
 .container {
   margin: 0 auto;
-  width: 500px;
-  background-color: pink;
+  width: 400px;
+  /* background-color: pink; */
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+h1,
+h2 {
+  padding-left: 15px;
 }
 
 ul {
@@ -26,10 +31,12 @@ ul {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
-  background-color: rgb(59, 97, 59);
+  /* background-color: rgb(59, 97, 59); */
   text-align: center;
   margin-top: 30px;
   height: 70px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .income {
@@ -42,8 +49,22 @@ ul {
   justify-self: center;
 }
 
+.income-num,
+.expense-num {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.income-num {
+  color: green;
+}
+
+.expense-num {
+  color: red;
+}
+
 .history-container {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   padding: 30px;
 }
 
@@ -60,7 +81,7 @@ h3 {
 }
 
 .item {
-  background-color: blue;
+  /* background-color: blue; */
   padding: 15px 25px;
   border-radius: 5px;
   border-right-style: solid;
@@ -69,21 +90,22 @@ h3 {
   /* border-right: 7px solid red; */
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
   padding: 30px;
 }
 
 .submit-btn {
   margin-top: 30px;
-  width: 440px;
+  width: 340px;
   height: 50px;
   font-size: 20px;
-  background-color: rgb(139, 89, 89);
+  /* background-color: rgb(139, 89, 89); */
   border-radius: 5px;
 }
 

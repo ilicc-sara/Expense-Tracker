@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <h2>Expense Tracker</h2>
-      <h1 class="balance">YOUR BALANCE <span class="balance-num">$ 0</span></h1>
+      <h1 class="balance">YOUR BALANCE $<span class="balance-num">0</span></h1>
 
       <div class="income-expense">
         <div class="income">
@@ -23,9 +23,9 @@
       </div>
 
       <div class="history-container">
-        <p>History</p>
+        <h3>History</h3>
         <ul class="items-container">
-          <li class="item">Item</li>
+          <!-- <li class="item">Item</li> -->
         </ul>
       </div>
 
@@ -36,9 +36,8 @@
         <label>Amount</label>
         <label>(negative - expense, positive - income)</label>
         <input type="number" class="input-number" placeholder="0" />
+        <button class="submit-btn">Add Transaction</button>
       </form>
-
-      <button class="submit-btn">Add Transaction</button>
     </div>
 
     <script type="module" src="/src/main.js"></script>

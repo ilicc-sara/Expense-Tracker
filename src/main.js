@@ -71,6 +71,12 @@ class TransactionManager {
 
 const manager = new TransactionManager();
 
+function updateUI() {
+  balanceNumberEl.textContent = manager.balance();
+  incomeNumber.textContent = `$ ${manager.positiveBalance()}`;
+  expenseNumber.textContent = `$ ${manager.negativeBalance()}`;
+}
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -90,9 +96,7 @@ form.addEventListener("submit", function (e) {
       : (item.style.borderRightColor = "red");
   }
 
-  balanceNumberEl.textContent = manager.balance();
-  incomeNumber.textContent = `$ ${manager.positiveBalance()}`;
-  expenseNumber.textContent = `$ ${manager.negativeBalance()}`;
+  updateUI();
 
   inputNumberEl.value = "";
   inputTextEl.value = "";
@@ -107,4 +111,6 @@ itemContainer.addEventListener("click", function (e) {
   manager.filter(targetId);
 
   targetEl.remove();
+
+  updateUI();
 });

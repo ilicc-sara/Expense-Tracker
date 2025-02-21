@@ -81,14 +81,14 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   if (inputNum === "0" || inputNum === undefined) {
-    alert("Expense numbers should be real numbers only!");
+    alert("Transaction numbers should be real numbers only!");
   } else {
-    const expense = new Transaction(inputText, inputNum);
-    manager.add(expense);
+    const transaction = new Transaction(inputText, inputNum);
+    manager.add(transaction);
 
     const item = document.createElement("li");
     item.innerHTML = `<button class="delete">X</button><span>${inputText}</span> <span>$ ${inputNum}</span>`;
-    item.setAttribute("data-id", expense.id);
+    item.setAttribute("data-id", transaction.id);
     itemContainer.appendChild(item).className = "item";
 
     Math.sign(inputNum) === 1
